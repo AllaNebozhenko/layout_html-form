@@ -11,19 +11,18 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="group">
         <legend>Personal information</legend>
         <label class="form-field">
-            Surname:
+          Surname:
           <input
-                type="text"
-                name="surname"
-                required 
-                autocomplete="off"
-              >
+            type="text"
+            name="surname"
+            required 
+            autocomplete="off"
+          >
         </label>
         <label class="form-field">
           Name:
@@ -85,23 +84,25 @@
       </fieldset>
       <fieldset class="group">
         <legend>An interesting fact about you!</legend>
-        <label class="form-field-cats">
+        <div class="form-field">
           Do you love cats?
-          <input
-            type="radio"
-            name="loveCats"
-            value="yes"
-          >
+          <label>
+            <input
+              type="radio"
+              name="loveCats"
+              value="yes"
+            >
            Yes
-        </label>
-        <label class="form-field-cats">
-          <input
-            type="radio"
-            name="loveCats"
-            value="no"
-          >
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="loveOrNoCats"
+              value="no"
+            >
            No
-        </label>
+          </label>
+        </div>
         <label class="form-field">
           What is your favorite color?
           <input
@@ -113,6 +114,7 @@
           What time do you go to bed?
           <input
             type="time"
+            step="1"
             name="sleepTime"
           >
         </label>
@@ -129,7 +131,9 @@
           <input
             type="range"
             name="workRate"
-            value="0"
+            value="1"
+            min="1"
+            max="10"
           >
         </label>
       </fieldset>
@@ -141,14 +145,14 @@
         </label>
         <label class="form-field">
           Would you recommend us?
-          <select name="recommend" multiple>
+          <select name="recommend">
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select> 
         </label>
       </fieldset>
 
-      <button type="submit">Submit</button>
+      <input type="submit" value="Submit">
     </form>
   </body>
 </html>

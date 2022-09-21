@@ -1,10 +1,11 @@
 
-.form-field {
+.group {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-bottom: 0;
 }
 
-.group {
-  margin-bottom: 20px;
+.form-field {
+  display: block;
+  margin-bottom: 10px;
 }
