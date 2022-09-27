@@ -2,10 +2,12 @@
 .group {
   display: block;
   margin-bottom: 20px;
-  padding-bottom: 0;
 }
 
 .form-field {
   display: block;
+}
+
+.form-field:not(:last-child) {
   margin-bottom: 10px;
 }
